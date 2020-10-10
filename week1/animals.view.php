@@ -104,6 +104,12 @@
                 font-size:25px;
                 color:rgb(105, 0, 0);
             }
+
+            .hw_assignment {
+                text-align:center;
+                float:right;
+            }
+            
             
             footer {
                 clear:both;
@@ -143,7 +149,8 @@
             <div id="assignments">
                 
                 <h3 id="nav_title">ASSIGNMENTS</h3>
-                <a class="btn" href="index.php">Home</a>
+                <a class="btn" href="https://d-davis-se266.herokuapp.com/">Home</a>
+                <a class="btn" href="animals.php">Week 1 | Array</a>
                 <a class="btn" href="#">Week 1 | FizzBuzz</a>
                 <a class="btn" href="#">Week 1 | Savings</a>
                 <a class="btn" href="#">Week 2</a>
@@ -185,7 +192,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/9/2020 11:46PM</p>
+                <p>Last Updated 10/9/2020 11:53PM</p>
             
             </footer>
         
