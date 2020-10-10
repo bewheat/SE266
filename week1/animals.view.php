@@ -105,9 +105,15 @@
                 color:rgb(105, 0, 0);
             }
 
-            .hw_assignment {
+            #hw_assignment {
+                width:700px;
+                margin:auto;
                 text-align:center;
-                float:right;
+            }
+
+            #list_container {
+                color:darkred;
+                margin:auto;
             }
             
             
@@ -192,7 +198,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/9/2020 11:53PM</p>
+                <p>Last Updated 10/10/2020 2:10PM</p>
             
             </footer>
         
