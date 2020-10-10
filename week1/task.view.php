@@ -162,8 +162,8 @@
                 
                 <h3 id="nav_title">ASSIGNMENTS</h3>
                 <a class="btn" href="https://d-davis-se266.herokuapp.com/">Home</a>
-                <a class="btn" href="animals.php">Week 1 | Array</a>
-                <a class="btn" href="task.php">Week 1 | Associative Array</a>
+                <a class="btn" href="animals.php">Week 1 | Animal Array</a>
+                <a class="btn" href="task.php">Week 1 | Task Array</a>
                 <a class="btn" href="#">Week 1 | FizzBuzz</a>
                 <a class="btn" href="#">Week 2</a>
                 <a class="btn" href="#">Week 3</a>
@@ -186,13 +186,30 @@
                 <div id="list_container">
 
                     <ul>
-                        <?php
+                        <li><strong>Assignment: </strong><?=$task['Title']?></li>
+                    </ul>
 
-                            foreach($task as $info => $status) {
-                                echo "<strong><li>$info: </strong>$status</li>";
-                            }
+                    <ul>
+                        <li><strong>Due Date: </strong><?=$task['Due']?></li>
+                    </ul>
 
-                        ?>
+                    <ul>
+                        <li><strong>Assigned To: </strong><?=$task['Assigned To']?></li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <strong>Finished: </strong>
+
+                            <?php
+
+                                if($task['Completed']) {
+                                    echo"&#9989";
+                                } else {
+                                    echo"&#10062";
+                                }
+                            ?>
+                        </li>
                     </ul>
 
                 </div><!--/#list_container-->
@@ -206,7 +223,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/10/2020 4:15PM</p>
+                <p>Last Updated 10/10/2020 4:51PM</p>
             
             </footer>
         
