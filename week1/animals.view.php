@@ -115,6 +115,10 @@
                 color:darkred;
                 margin:auto;
             }
+
+            ul {
+                list-style-type:none;
+            }
             
             
             footer {
