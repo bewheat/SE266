@@ -50,7 +50,7 @@
                 font-size:20px;
             }
             
-            #assignment {
+            #assignments {
                 float:left;
                 width:150px;
                 height:630px;
@@ -89,13 +89,6 @@
                 background-color:rgb(139, 0, 0, .3);
             }
             
-            #php {
-                width:700px;
-                margin:auto;
-                text-align: center;
-                /*border:2px black;*/
-            }
-            
             a {
                 text-decoration: none;
                 display:block;
@@ -105,20 +98,6 @@
             a:hover {
                 color:rgb(91, 1, 119);
                 font-size:25px;
-            }
-            
-            #git {
-                width:700px;
-                margin:auto;
-                text-align: center;
-                /*border-bottom:2px darkred;*/
-            }
-            
-            #extra {
-                width:700px;
-                margin:auto;
-                text-align: center;
-                /*border:2px darkred;*/
             }
 
             .title {
@@ -161,11 +140,10 @@
             
             <!--*****************Page Content*************-->
             <!--assignment bar-->
-            <div id="assignment">
+            <div id="assignments">
                 
                 <h3 id="nav_title">ASSIGNMENTS</h3>
-                <a class="btn" href="index.html">Home</a>
-                <a class="btn" href="animals.php">Week 1| Array</a>
+                <a class="btn" href="index.php">Home</a>
                 <a class="btn" href="#">Week 1 | FizzBuzz</a>
                 <a class="btn" href="#">Week 1 | Savings</a>
                 <a class="btn" href="#">Week 2</a>
@@ -179,31 +157,30 @@
                 <a class="btn" href="#">Week 10</a>
                 
             
-            </div><!--#assignment-->
+            </div><!--#assignments-->
+
+            <div id="hw_assignment">
+                <h2 class='title'>Week 1 | Animal Array</h2>
+
+                <div id="list_container">
+
+                    <ul>
+                        <?php
+
+                            foreach($animals as $animal) {
+                                echo "<li>{$animal}</li>";
+                            }
+
+                        ?>
+                    </ul>
+
+                </div><!--/#list_container-->
+
+
+
+
+            </div><!--/#hw_assignment-->
             
-            <!--PHP resources-->
-            <div id="php">
-                <h3 class="title">PHP resources</h3>
-                <a href="https://phpdelusions.net/pdo">PDO Tutorial</a>
-                <a href="https://phptherightway.com/">PHP The Right Way</a>
-                <a href="https://www.php.net/manual/en/tutorial.php">PHP Tutorial</a>
-            </div><!--/php-->
-            
-            <!--git resources-->
-            <div id="git">
-                <h3 class="title">GIT resources</h3>
-                <a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a>
-                <a href="https://dev.to/neshaz/when-to-use-git-reset-git-revert--git-checkout-18je">Undo</a>
-                <a href="https://www.youtube.com/githubguides">Github Training & Guides</a>
-            </div><!--/git-->
-            
-            <!--extra links-->
-            <div id="extra">
-                <h3 class="title">Recreational Links(What I Do For Fun)</h3>
-                <a href="https://www.playtheend.com">Play The End</a>
-                <a href="https://www.hackerrank.com/dashboard">Practice Python(or another language)</a>
-                <a href="https://www.allrecipes.com/recipe/11015/devil-dogs/">Devil Dog Recipe</a>
-            </div><!--/#extra-->
             
             <!--**************FOOTER***************-->
             <footer>
