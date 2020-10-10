@@ -103,6 +103,7 @@
             .title {
                 font-size:25px;
                 color:rgb(105, 0, 0);
+                text-align:center;
             }
 
             #hw_assignment {
@@ -113,7 +114,12 @@
 
             #list_container {
                 color:darkred;
-                margin:auto;
+                margin-left:250px;
+                text-align:left;
+            }
+
+            ul {
+                list-style-type:none;
             }
             
             
@@ -173,15 +179,17 @@
             </div><!--#assignments-->
 
             <div id="hw_assignment">
-                <h2 class='title'>Week 1 | Animal Array</h2>
+                <h2 class='title'>Week 1 | Associative Array</h2>
+
+                <h3 class="title" style="font-size:20px;">Task:</h3>
 
                 <div id="list_container">
 
                     <ul>
                         <?php
 
-                            foreach($animals as $animal) {
-                                echo "<li>{$animal}</li>";
+                            foreach($task as $info => $status) {
+                                echo "<strong><li>$info: </strong>$status</li>";
                             }
 
                         ?>
@@ -198,7 +206,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/10/2020 3:50PM</p>
+                <p>Last Updated 10/10/2020 4:15PM</p>
             
             </footer>
         
