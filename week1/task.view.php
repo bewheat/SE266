@@ -165,7 +165,7 @@
                 <a class="btn" href="animals.php">Week 1 | Animal Array</a>
                 <a class="btn" href="task.php">Week 1 | Task Array</a>
                 <a class="btn" href="check.php">Week 1 | Function</a>
-                <a class="btn" href="#">Week 1 | FizzBuzz</a>
+                <a class="btn" href="fizzbuzz.php">Week 1 | FizzBuzz</a>
                 <a class="btn" href="#">Week 2</a>
                 <a class="btn" href="#">Week 3</a>
                 <a class="btn" href="#">Week 4</a>
@@ -224,7 +224,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/10/2020 5:13PM</p>
+                <p>Last Updated 10/10/2020 4:06PM</p>
             
             </footer>
         

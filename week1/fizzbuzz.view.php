@@ -122,8 +122,7 @@
             hr {
                 border:1px solid rgb(91, 1, 119, .7);
             }
-            
-            
+                        
             footer {
                 clear:both;
                 border-top:1px solid darkred;
@@ -181,19 +180,15 @@
             </div><!--#assignments-->
 
             <div id="hw_assignment">
-                <h2 class='title'>Week 1 | Using Functions</h2>
-
-                <h3 class="title" style="font-size:20px;">Are You Old Enough?</h3>
+                <h2 class='title'>Week 1 | FizzBuzz</h2>
 
                 <div id="php_container">
                     <?php
-                        foreach($ages as $name => $age) {
-                            if (ageCheck($age)) {
-                                echo "$name, can come in. Age:$age &#9989<br><hr><br>";
-                            } else {
-                                echo "Sorry $name, come back when you're older. Age:$age &#10062<br><hr><br>";
-                            }
+
+                        for($x = 1; $x <= 100; $x++) {
+                            echo fizzbuzz($x) . '<br><hr><br>';
                         }
+                        
                     ?>
                 </div><!--/#php_container-->
 
@@ -203,7 +198,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/10/2020 4:06PM</p>
+                <p>Last Updated 10/10/2020 4:29PM</p>
             
             </footer>
         
