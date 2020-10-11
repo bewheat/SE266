@@ -189,9 +189,9 @@
                     <?php
                         foreach($ages as $name => $age) {
                             if (ageCheck($age)) {
-                                echo "$name, can come in. $age &#9989<br><hr><br>";
+                                echo "$name, can come in. Age:$age &#9989<br><hr><br>";
                             } else {
-                                echo "Sorry $name, come back when you're older. $age &#10062<br><hr><br>";
+                                echo "Sorry $name, come back when you're older. Age:$age &#10062<br><hr><br>";
                             }
                         }
                     ?>
@@ -203,7 +203,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/10/2020 3:57PM</p>
+                <p>Last Updated 10/10/2020 3:59PM</p>
             
             </footer>
         
