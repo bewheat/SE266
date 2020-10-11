@@ -17,7 +17,7 @@
                 border:none;
                 background-color: rgb(48, 12, 12,.5);
                 box-shadow: 3px black;
-                height:880px;
+                height:980px;
             }
             
             header {
@@ -53,7 +53,7 @@
             #assignment {
                 float:left;
                 width:150px;
-                height:630px;
+                height:730px;
                 margin: 25px 0 10px 10px;
                 padding:10px;
                 border:2px solid black;
