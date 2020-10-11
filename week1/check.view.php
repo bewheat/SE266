@@ -103,6 +103,7 @@
             .title {
                 font-size:25px;
                 color:rgb(105, 0, 0);
+                text-align:center;
             }
 
             #hw_assignment {
@@ -111,13 +112,15 @@
                 text-align:center;
             }
 
-            #list_container {
+            #php_container {
                 color:darkred;
-                margin:auto;
+                margin-left:150px;
+                text-align:left;
+                font-size:20px;
             }
 
-            ul {
-                list-style-type:none;
+            hr {
+                border:1px solid rgb(91, 1, 119, .7);
             }
             
             
@@ -178,24 +181,21 @@
             </div><!--#assignments-->
 
             <div id="hw_assignment">
-                <h2 class='title'>Week 1 | Animal Array</h2>
+                <h2 class='title'>Week 1 | Using Functions</h2>
 
-                <div id="list_container">
+                <h3 class="title" style="font-size:20px;">Are You Old Enough?</h3>
 
-                    <ul>
-                        <?php
-
-                            foreach($animals as $animal) {
-                                echo "<li>{$animal}</li>";
+                <div id="php_container">
+                    <?php
+                        foreach($ages as $name => $age) {
+                            if (ageCheck($age)) {
+                                echo "$name, can come in. $age &#9989<br><hr><br>";
+                            } else {
+                                echo "Sorry $name, come back when you're older. $age &#10062<br><hr><br>";
                             }
-
-                        ?>
-                    </ul>
-
-                </div><!--/#list_container-->
-
-
-
+                        }
+                    ?>
+                </div><!--/#php_container-->
 
             </div><!--/#hw_assignment-->
             
@@ -203,7 +203,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/10/2020 5:12PM</p>
+                <p>Last Updated 10/10/2020 3:57PM</p>
             
             </footer>
         

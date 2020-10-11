@@ -164,6 +164,7 @@
                 <a class="btn" href="https://d-davis-se266.herokuapp.com/">Home</a>
                 <a class="btn" href="animals.php">Week 1 | Animal Array</a>
                 <a class="btn" href="task.php">Week 1 | Task Array</a>
+                <a class="btn" href="check.php">Week 1 | Function</a>
                 <a class="btn" href="#">Week 1 | FizzBuzz</a>
                 <a class="btn" href="#">Week 2</a>
                 <a class="btn" href="#">Week 3</a>
@@ -223,7 +224,7 @@
             <!--**************FOOTER***************-->
             <footer>
                 
-                <p>Last Updated 10/10/2020 4:51PM</p>
+                <p>Last Updated 10/10/2020 5:13PM</p>
             
             </footer>
         
