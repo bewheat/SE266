@@ -7,4 +7,6 @@ $task = [
     'Completed' => true
 ];
 
+include_once ('header.php');
 require "task.view.php";
+include_once ('../footer.php');

@@ -11,4 +11,6 @@
         'Mariah' => 19,
     ];
 
+    include_once ('header.php');
     require ('check.view.php');
+    include_once ('../footer.php');

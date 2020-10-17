@@ -1,0 +1,58 @@
+body {
+    background-image:url(images/5-dots.png);
+    background-color:black;
+}
+
+#wrapper {
+    
+    width:980px;
+    margin:auto;
+    border:none;
+    background-color: rgb(48, 12, 12,.5);
+    box-shadow: 3px black;
+    height:980px;
+}
+
+#php {
+    width:700px;
+    margin:auto;
+    text-align: center;
+    /*border:2px black;*/
+}
+
+a {
+    text-decoration: none;
+    display:block;
+    color:red;
+}
+
+a:hover {
+    color:rgb(91, 1, 119);
+    font-size:25px;
+}
+
+#git {
+    width:700px;
+    margin:auto;
+    text-align: center;
+    /*border-bottom:2px darkred;*/
+}
+
+#extra {
+    width:700px;
+    margin:auto;
+    text-align: center;
+    /*border:2px darkred;*/
+}
+
+.title {
+    font-size:25px;
+    color:red;
+}
+
+footer {
+    clear:both;
+    border-top:1px solid red;
+    text-align: center;
+    color:red;
+}
