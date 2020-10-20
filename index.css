@@ -8,7 +8,7 @@ body {
     width:980px;
     margin:auto;
     border:none;
-    background-color: rgb(48, 12, 12,.5);
+    background-color: rgb(48, 12, 12,.8);
     box-shadow: 3px black;
     height:980px;
 }
@@ -55,4 +55,20 @@ footer {
     border-top:1px solid red;
     text-align: center;
     color:red;
+}
+
+
+
+/*-----------------INTAKE CSS------------*/
+#form_container {
+    float:right;
+    color:red;
+    text-align:center;
+    margin:auto;
+    width:700px;
+    padding:20px;
+}
+
+.label {
+    font-weight:bold;
 }

@@ -1,66 +1,141 @@
 body {
-                background-image:url(images/5-dots.png);
-                background-color:black;
-            }
-            
-            #wrapper {
-                
-                width:980px;
-                margin:auto;
-                border:none;
-                background-color: rgb(48, 12, 12,.5);
-                box-shadow: 3px black;
-                height:980px;
-            }
-            
-            
-            a {
-                text-decoration: none;
-                display:block;
-                color:red;
-            }
+    background-image:url(images/5-dots.png);
+    background-color:black;
+}
+    
+#wrapper {
+        
+    width:980px;
+    margin:auto;
+    border:none;
+    background-color: rgb(48, 12, 12,.8);
+    box-shadow: 3px black;
+    height:980px;
+}
+    
+    
+a {
+    text-decoration: none;
+    display:block;
+    color:red;
+}
 
-            a:hover {
-                color:rgb(91, 1, 119);
-                font-size:25px;
-            }
+a:hover {
+    color:rgb(91, 1, 119);
+    font-size:25px;
+}
 
-            .title {
-                font-size:25px;
-                color:red;
-                text-align:center;
-            }
+.title {
+    font-size:25px;
+    color:red;
+    text-align:center;
+}
 
-            #hw_assignment {
-                width:700px;
-                margin:auto;
-                text-align:center;
-            }
+header {
+    width:980px;
+    height: 120px;
+    margin:auto;
+    border-bottom: 2px solid red;
+}
 
-            #list_container {
-                color:red;
-                margin-left:250px;
-                text-align:left;
-            }
+#logo {
+    float:left;
+    text-align: left;
+    width:450px;
+    height: 100px;
+    line-height:20px;
+    font-size:20px;
+    color:red;
+    margin:10px;
+}
 
-            ul {
-                list-style-type:none;
-            }
+#git_container {
+    float:right;
+    width:150px;
+    padding:10px;
+}
 
-            #php_container {
-                color:red;
-                margin-left:150px;
-                text-align:left;
-                font-size:20px;
-            }
+.git_link {
+    display:block;
+    text-decoration: none;
+    font-size:20px;
+}
 
-            hr {
-                border:1px solid rgb(255,0,0, .7);
-            }
+#assignment {
+    float:left;
+    width:150px;
+    height:730px;
+    margin: 25px 0 10px 10px;
+    padding:10px;
+    border:2px solid black;
+    box-shadow:2px red;
+    background-color:rgb(139, 0, 0,.3);
+}
+
+#nav_title {
+    font-size:18px;
+    text-align: center;
+    color:red;
+    text-shadow:3px,black;
+}
+
+.btn {
+    float:left;
+    display: block;
+    width:120px;
+    height: 40px;
+    background-color:rgb(0, 0, 0, .5);
+    color:red;
+    margin-top:5px;
+    margin-left:15px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border:1px solid rgb(0, 0, 0);
+}
+
+.btn:hover {
+    font-size: 25px;
+    color:black;
+    background-color:rgb(139, 0, 0, .3);
+}
+
+#hw_assignment {
+    width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+#list_container {
+    color:red;
+    margin-left:250px;
+    text-align:left;
+}
+
+ul {
+    list-style-type:none;
+}
+
+#php_container {
+    color:red;
+    margin-left:150px;
+    text-align:left;
+    font-size:20px;
+}
+
+hr {
+    border:1px solid rgb(255,0,0, .7);
+}
                         
-            footer {
-                clear:both;
-                border-top:1px solid red;
-                text-align: center;
-                color:red;
-            }
+footer {
+    clear:both;
+    border-top:1px solid red;
+    text-align: center;
+    color:red;
+}
+
+#content {
+    float:right;
+    text-align:center;
+    border-top:1px solid red;
+}

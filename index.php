@@ -1,13 +1,3 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Desiree Davis | SE266</title>
-        <link ref="stylesheet" type="text/css" href="index.css"/>
-    </head>
-
-    <body>
-
         <div id="wrapper">
             
             <!--PHP resources-->
