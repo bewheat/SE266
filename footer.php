@@ -3,7 +3,7 @@
 
     <footer>
         <p>
-            Last Updated 10/18/2020 2:00PM
+            Last Updated 10/24/2020 11:28AM
         </p>
     </footer>
 
