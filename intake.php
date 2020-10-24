@@ -70,29 +70,22 @@
 
 
     //Print error message
-    if($error != ''){
+    if($error != '' && isset($_POST['submitBtn'])){
 
         $error = "<ul>$error</ul>";
-        // echo "Form Errors Found. Please Fix The Following To Continue:";
-        // echo $error;
 
     }
     //calculate and display results
-    // else {
+    else {
             
-    //     $bmi = round(bmi($ft, $inches, $weight),1);
-    //     $bmiClass = bmiDescription($bmi);
+        $bmi = round(bmi($ft, $inches, $weight),1);
+        $bmiClass = bmiDescription($bmi);
+    }
 
-    //     echo "Information Entered:";
-    //     echo "Age: $age";
-    //     echo "BMI: $bmi";
-    //     echo "BMI Classification: $bmiClass";
-    // }
-
-    // echo "Form Submitted.";
+    echo "Form Submitted.";
     
 
 
-//require_once ('header.php');
+require_once ('header.php');
 require ('intake.view.php');
 include 'footer.php';

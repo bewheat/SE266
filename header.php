@@ -125,6 +125,4 @@
                 
             
             </div><!--#assignment-->
-        </div><!--/#wrapper-->
-    </body>
-</html>
+        <div id="content">

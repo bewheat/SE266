@@ -72,3 +72,18 @@ footer {
 .label {
     font-weight:bold;
 }
+
+#errors {
+    list-style-type:none;
+}
+
+.error_title {
+
+    font-size:20px;
+    font-weight:bold;
+}
+
+#content {
+    float:right;
+    
+}
