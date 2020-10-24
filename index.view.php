@@ -1,8 +1,10 @@
-<head>
+<html lang="en">
+    <head>
         <meta charset="utf-8">
         <title>Desiree Davis | SE266</title>
-        <link ref="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
+
             
             <!--PHP resources-->
             <div id="php">
@@ -27,3 +29,6 @@
                 <a href="https://www.hackerrank.com/dashboard">Practice Python(or another language)</a>
                 <a href="https://www.allrecipes.com/recipe/11015/devil-dogs/">Devil Dog Recipe</a>
             </div><!--/#extra-->
+        </div><!--/#wrapper-->
+    </body>
+</html>

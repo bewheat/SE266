@@ -108,7 +108,7 @@
             <div id="assignment">
                 
                 <h3 id="nav_title">ASSIGNMENTS</h3>
-                <a class="btn" href="https://d-davis-se266.herokuapp.com/">Home</a>
+                <a class="btn" href="index.php">Home</a>
                 <a class="btn" href="week1/animals.php">Week 1| Animal Array</a>
                 <a class="btn" href="week1/task.php">Week 1 | Task Array</a>
                 <a class="btn" href="week1/check.php">Week 1 | Function</a>
