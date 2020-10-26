@@ -40,7 +40,7 @@
                 <a class="btn" href="check.php">Week 1 | Function</a>
                 <a class="btn" href="fizzbuzz.php">Week 1 | FizzBuzz</a>
                 <a class="btn" href="../intake.php">Week 2 | Forms</a>
-                <a class="btn" href="#">Week 3</a>
+                <a class="btn" href="../atm.php">Week 3 | ATM</a>
                 <a class="btn" href="#">Week 4</a>
                 <a class="btn" href="#">Week 5</a>
                 <a class="btn" href="#">Week 6</a>

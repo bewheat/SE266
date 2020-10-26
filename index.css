@@ -48,6 +48,7 @@ a:hover {
 .title {
     font-size:25px;
     color:red;
+    text-align:center;
 }
 
 footer {
@@ -88,3 +89,35 @@ footer {
 
 }
 
+
+#checking {
+
+    width:300px;
+    float:left;
+    height:300px;
+    margin:left;
+    text-align:left;
+    padding:20px;
+    /*border:1px solid red;*/
+    border-right:1px solid red;
+}
+
+#savings {
+
+    width:300px;
+    float:right;
+    height:300px;
+    margin:left;
+    text-align:left;
+    padding:20px;
+    /*border:1px solid red;*/
+}
+
+#checking_form {
+
+    padding:20px 0 0 0;
+}
+
+#savings_form {
+    padding:20px 0 0 0;
+}
