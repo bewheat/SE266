@@ -22,6 +22,7 @@
         $ft = filter_input(INPUT_POST, 'ft', FILTER_VALIDATE_INT);
         $inches = filter_input(INPUT_POST, 'inches', FILTER_VALIDATE_INT);
         $weight = filter_input(INPUT_POST, 'weight', FILTER_VALIDATE_FLOAT);
+        $married = $_POST['married'];
 
     } else {
 
@@ -65,7 +66,7 @@
 
     if(!isset($_POST['married'])){
 
-        $error .= "<li>No Relationship Status Entered";
+        $error .= "<li>No Relationship Status Entered</li>";
     }
 
 

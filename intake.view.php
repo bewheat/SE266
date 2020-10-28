@@ -32,8 +32,8 @@
                     <input type="text" name="weight" value="<?= $weight; ?>"/><br><br>
 
                     <label class="label">Married:</label>
-                    <input type="radio" name="married">Yes
-                    <input type="radio" name="married">No
+                    <input type="radio" name="married" value="yes">Yes
+                    <input type="radio" name="married" value="no">No
                     <br><br>
 
                     <input type="submit" name="submitBtn" value="Submit"/>

@@ -50,9 +50,9 @@
         //convert to metric
         $kg = $weight / 2.20462;
         $cFt = $ft * 12;
-        $height = ($cFt + $inches) * 0.0254; //meters
+        $height = ($cFt + $inch) * 0.0254; //meters
 
-        $bmi = $kg / ($height ^ 2);
+        $bmi = $kg / ($height * $height);
 
         return $bmi;
     }
