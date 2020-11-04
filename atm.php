@@ -1,5 +1,6 @@
 <?php
 
+
     $chWithdraw = "";
     $chDeposit = "";
     $saveWithdraw = "";
@@ -8,6 +9,9 @@
 
 
     require('account.php');
+    
+    $checking = new CheckingAccount ('C123', 1000, '12-20-2019');
+    $savings = new SavingsAccount('S123', 5000, '03-20-2020');
     
 
     if(isset($_POST["checkWithdraw"])){
@@ -24,6 +28,8 @@
 
                 $error = "INSUFFICIENT FUNDS. CHECK BALANCE AND TRY AGAIN.";
 
+            } else {
+                $checking->setBalance($checking->balance - $chWithdraw);
             } 
 
         }

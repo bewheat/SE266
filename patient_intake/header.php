@@ -108,14 +108,14 @@
             <div id="assignment">
                 
                 <h3 id="nav_title">ASSIGNMENTS</h3>
-                <a class="btn" href="index.php">Home</a>
-                <a class="btn" href="week1/animals.php">Week 1| Animal Array</a>
-                <a class="btn" href="week1/task.php">Week 1 | Task Array</a>
-                <a class="btn" href="week1/check.php">Week 1 | Function</a>
-                <a class="btn" href="week1/fizzbuzz.php">Week 1 | FizzBuzz</a>
-                <a class="btn" href="intake.php">Week 2 | Forms</a>
-                <a class="btn" href="atm.php">Week 3 | ATM</a>
-                <a class="btn" href="patient_intake/patient_review.php">Week 4 | DB Intake</a>
+                <a class="btn" href="../index.php">Home</a>
+                <a class="btn" href="../week1/animals.php">Week 1| Animal Array</a>
+                <a class="btn" href="../week1/task.php">Week 1 | Task Array</a>
+                <a class="btn" href="../week1/check.php">Week 1 | Function</a>
+                <a class="btn" href="../week1/fizzbuzz.php">Week 1 | FizzBuzz</a>
+                <a class="btn" href="../intake.php">Week 2 | Forms</a>
+                <a class="btn" href="../atm.php">Week 3 | ATM</a>
+                <a class="btn" href="patient_review.php">Week 4 | DB Intake</a>
                 <a class="btn" href="#">Week 5</a>
                 <a class="btn" href="#">Week 6</a>
                 <a class="btn" href="#">Week 7</a>
