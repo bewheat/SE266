@@ -25,7 +25,7 @@
         return ($results);
     }
 
-    function addPatient($fn, $ln, $m, $d){
+    function addPatient($fn, $ln, $m, $bd){
 
         global $db;
 
@@ -33,30 +33,26 @@
         $results = "Not Added.";
 
         //create SQL statement
-        $stmt = $db -> prepare("INSERT INTO patients SET patientFirstName = :fName, patientLastName = :lName, patientMarried = :married, patientBirthDate = STR_TO_DATE(:bDate, '%m,%d,%Y)");
+        $stmt = $db -> prepare("INSERT INTO patients SET patientFirstName = :fName, patientLastName = :lName, patientMarried = :married, patientBirthDate = :bDate");
         
         //bind values
         $stmt->bindValue(':fName', $fn);
         $stmt->bindValue(':lName', $ln);
         $stmt->bindValue(':married', $m);
-
-        $bd = $bd->format('m,d,Y');
         $stmt->bindValue(':bDate', $bd);
 
 
         //execute SQL statement
         if ($stmt->execute() && $stmt-> rowCount() > 0) {
 
-            $results = 'Data Added.';
+            $results = 'Data Added:';
 
         }
-
-        //$stmt->closeCursor();
 
         return($results);
     }
 
-    // $test = addPatient('William', 'Beckett', 0);
+    // $test = addPatient('William', 'Beckett', 0, 1985-02-11);
     // echo $test;
     // $patients = getPatient();
     // var_dump($patients);

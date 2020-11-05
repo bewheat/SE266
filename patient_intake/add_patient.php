@@ -3,7 +3,6 @@
     //add necessary pages
     include('../functions.php');
     include('model/model_intake.php');
-    //include('patient_review.php');
 
     //initialize variables
     $firstName = "";
@@ -17,7 +16,8 @@
         $firstName = filter_input(INPUT_POST, 'firstName');
         $lastName = filter_input(INPUT_POST, 'lastName');
         $birthDate = filter_input(INPUT_POST, 'birthDate');
-        if($married){
+
+        if(!empty($_POST['married'])){
 
             $married = 1;
     
@@ -27,9 +27,6 @@
         }
 
     }
-
-
-    //technically this should be in a seperate file but I'm not doing that. If it was a bigger project I would but it's not.
 
     include('header.php');
     include('add_patient.view.php');

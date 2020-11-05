@@ -6,8 +6,7 @@
 <html lang="en">-->
     <head>
         <meta charset="utf-8">
-        <title>Desiree Davis | Classes</title>
-        <!--<link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/3.4.0/css/bootstrap.min.css"/>-->
+        <title>Desiree Davis | Databases</title>
         <link rel="stylesheet" type="text/css" href="../index.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootsrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -37,7 +36,7 @@
                                     <td><?php echo $patient['id']; ?></td>
                                     <td><?php echo $patient['patientFirstName'] . " " . $patient['patientLastName']; ?></td>
                                     <td>
-                                        <?php //echo $patient['patientMarried'];
+                                        <?php
                                             if($patient['patientMarried'] == 1){
 
                                                 echo "Married";
@@ -48,7 +47,7 @@
                                             }
                                         ?>
                                     </td>
-                                    <td><?php echo $patient['patientBirthDate']; ?></td>
+                                    <td><?= $patient['patientBirthDate']; ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

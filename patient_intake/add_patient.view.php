@@ -1,14 +1,14 @@
 <html lang="en">-->
     <head>
         <meta charset="utf-8">
-        <title>Desiree Davis | Forms</title>
+        <title>Desiree Davis | Databases</title>
         <link rel="stylesheet" type="text/css" href="../index.css"/>
     </head>
 
 
             <div id="form_container">
 
-                <h3 class="title">Patient Intake Form</h3>
+                <h3 class="title">Add Patient:</h3>
 
                 <form method="post">
 
@@ -22,7 +22,7 @@
                     <input type="text" name="birthDate" value="<?= $birthDate; ?>"?/><br><br>
 
                     <label class="label">Married:</label>
-                    <input type="checkbox" value="<?= $married; ?>">
+                    <input type="checkbox" name="married">
                     <br><br>
 
                     <input type="submit" name="submitBtn" value="Add Patient"/>
@@ -36,22 +36,11 @@
                         
                         $result = addPatient($firstName, $lastName, $married, $birthDate);
                         echo $result;
-                        if($result == 'Data Added.'){
-
-                            echo "Name: " . $firstName . " " . $lastName;
-                            echo "Birth Date: " . $birthDate;
-                            if($married){
-
-                                echo "Relationship: Married";
-
-                            } else {
-
-                                echo "Relationship: Single";
-
-                            }
-                        }
+                    
                     }
                 ?>
+
+                <a href="patient_review.php">Return To Patient List?</a>
 
             </div><!--/#form_container-->
         </div><!--/#wrapper-->
