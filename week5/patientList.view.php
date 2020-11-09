@@ -1,6 +1,11 @@
 <?php
-    $patients = getPatient();
-    
+    $patient = getPatients();
+
+    if(isPostRequest()) {
+
+        $id = filter_input(INPUT_POST, "patientID");
+        deletePatient($id);
+    }
 ?>
 
 <html lang="en">-->
@@ -22,6 +27,7 @@
                     <table class="table table-striped" style="margin:auto;">
                         <thead>
                             <tr>
+                                <th>Delete Patient</th>
                                 <th>Patient ID</th>
                                 <th>Name</th>
                                 <th>Married</th>
@@ -34,6 +40,12 @@
 
                             <?php foreach($patients as $patient): ?>
                                 <tr>
+                                    <td>
+                                        <form action="patientList.php" method="post">
+                                            <input type="hidden" name="patientID" value="<?= $patient['id']; ?>" />
+                                            <button type="submit">&#2715</button>
+                                        </form>
+                                    </td>
                                     <td><?php echo $patient['id']; ?></td>
                                     <td><?php echo $patient['patientFirstName'] . " " . $patient['patientLastName']; ?></td>
                                     <td>

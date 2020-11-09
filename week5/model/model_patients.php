@@ -5,6 +5,7 @@
     include (__DIR__ . '/db.php');
 
 
+    //function to get list of patients in database and save the data to an array
     function getPatients () {
         global $db;
 
@@ -25,6 +26,7 @@
         return ($results);
     }
 
+    //function to add patient data to database
     function addPatient($fn, $ln, $m, $bd){
 
         global $db;
@@ -52,6 +54,7 @@
         return($results);
     }
 
+    //function to update patient information
     function updatePatient($id, $fn, $ln, $m, $bd){
 
         global $db;
@@ -79,6 +82,7 @@
 
     }
 
+    //function to delete patient from database
     function deletePatient($id) {
 
         global $db;
@@ -101,6 +105,7 @@
         return($results);
     }
 
+    //function to get data for one patient from database and save to an array
     function getPatient($id){
 
         global $db;
@@ -121,6 +126,13 @@
 
     }
 
+    //function to check if request is post or get
+    function isPostRequest() {
+
+        return(filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST');
+
+    }
+    
     // $test = addPatient('William', 'Beckett', 0, 1985-02-11);
     // echo $test;
     // $patients = getPatient();
