@@ -41,8 +41,8 @@
                 <a class="btn" href="fizzbuzz.php">Week 1 | FizzBuzz</a>
                 <a class="btn" href="../intake.php">Week 2 | Forms</a>
                 <a class="btn" href="../atm.php">Week 3 | ATM</a>
-                <a class="btn" href="#">Week 4</a>
-                <a class="btn" href="#">Week 5</a>
+                <a class="btn" href="../patient_intake/patient_review.php">Week 4 | DB Intake</a>
+                <a class="btn" href="../week5/patientList.php">Week 5 | DB Intake</a>
                 <a class="btn" href="#">Week 6</a>
                 <a class="btn" href="#">Week 7</a>
                 <a class="btn" href="#">Week 8</a>
