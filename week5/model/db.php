@@ -1,7 +1,7 @@
 <?php
 
     //connect dbconfig file and initialize db login credentials
-    $ini = parse_ini_file(__DIR__ . './dbconfig.ini');
+    $ini = parse_ini_file(__DIR__ . '/dbconfig.ini');
 
     //create database object
     $db = new PDO(
