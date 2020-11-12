@@ -19,7 +19,7 @@
 
                     <h2 class="title"> Patients</h2>
 
-                    <table class="table table-striped" style="margin:auto;">
+                    <table class="table table-striped" style="margin:auto;width:750px;">
                         <thead>
                             <tr>
                                 <th>Patient ID</th>

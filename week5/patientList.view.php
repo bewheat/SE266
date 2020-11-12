@@ -1,5 +1,5 @@
 <?php
-    $patient = getPatients();
+    $patients = getPatients();
 
     if(isPostRequest()) {
 
@@ -24,15 +24,15 @@
 
                     <h2 class="title"> Patients</h2>
 
-                    <table class="table table-striped" style="margin:auto;">
+                    <table class="table table-striped" style="width:700px;margin:auto;padding:5px;">
                         <thead>
                             <tr>
-                                <th>Delete Patient</th>
+                                <th>Delete</th>
                                 <th>Patient ID</th>
                                 <th>Name</th>
                                 <th>Married</th>
                                 <th>Birth Date</th>
-                                <th>Edit Patient</th>
+                                <th>Edit</th>
                             </tr>
                         </thead>
 
@@ -43,7 +43,7 @@
                                     <td>
                                         <form action="patientList.php" method="post">
                                             <input type="hidden" name="patientID" value="<?= $patient['id']; ?>" />
-                                            <button type="submit">&#2715</button>
+                                            <button type="submit" style="background:rgb(48, 12, 12,.8);border:none;">&#10060</button>
                                         </form>
                                     </td>
                                     <td><?php echo $patient['id']; ?></td>
@@ -62,7 +62,7 @@
 
                                     </td>
                                     <td><?= $patient['patientBirthDate']; ?></td>
-                                    <a href="#">&#9998</a>
+                                    <td><a href="patientEdit.php?action=update&id=<?=$patient['id']?>">&#9998</a></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
@@ -71,4 +71,4 @@
 
                     <br>
 
-                    <a href="add_patient.php">Add Patient</a>
+                    <a href="patientEdit.php?action=add">Add Patient</a>

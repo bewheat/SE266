@@ -114,7 +114,7 @@
 
         $stmt = $db->prepare("SELECT id, patientFirstName, patientLastName, patientMarried, patientBirthDate FROM patients WHERE id = :id");
 
-        $stmt->bindValues(":id", $id);
+        $stmt->bindValue(":id", $id);
 
         if($stmt->execute() && $stmt->rowCount() > 0){
 
@@ -124,6 +124,47 @@
 
         return($result);
 
+    }
+
+    function addMeasurements($id, $d, $h, $w, $bps, $bpd, $t ) {
+
+        global $db;
+
+        $result = "Data Not Updated";
+
+        $stmt = $db->prepare("INSERT INTO patientMeasurements SET patientId = :id, patientMeasurementDate = :nowDate, patientWeight = :pWeight, patientHeight = :height, patientBPSystolic = :bpSys, paitentBPDiastolic = :bpDia, patientTemperature = :temp");
+
+        $stmt->bindValue(":id", $id);
+        $stmt->bindValue(":nowDate", $dateNow);
+        $stmt->bindValue(":pWeight", $w);
+        $stmt->bindValue(":height", $h);
+        $stmt->bindValue(":bpSys", $bps);
+        $stmt->bindValue(":bpDia", $bpd);
+        $stmt->bindValue(":temp", $t);
+
+        if($stmt->execute() && $stmt->rowCount > 0) {
+
+            $result = "Data Added.";
+
+        }
+
+        return $result;
+    }
+
+    function getPatientMeasurement($id) {
+
+        global $db;
+
+        $result = [];
+
+        $stmt = $db->prepare("SELECT patientMeasurementDate, patientWeight, patientHeight, patientBPSystolic, patientBPDiastolic, patientTemperature FROM patientMeasurements WHERE patientId = $id");
+
+        if($stmt->execute() && $stmt->rowCount() > 0){
+
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
+
+        return $result;
     }
 
     //function to check if request is post or get
@@ -137,3 +178,5 @@
     // echo $test;
     // $patients = getPatient();
     // var_dump($patients);
+    //$patient = getPatient(10);
+    //var_dump($patient);
